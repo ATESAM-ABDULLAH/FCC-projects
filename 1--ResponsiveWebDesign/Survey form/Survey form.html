@@ -1,0 +1,166 @@
+<link rel="stylesheet" href="Survey form.css">
+<div class="container">
+  
+    <header class="header">
+      <h1 id="title" class="text-center">TEAM MEMBERSHIP FORM</h1>
+      <p id="description" class="description text-center">Fill the form to the best of your knowledge,any false report will be held accountable</p>
+    </header>
+    
+    <form id="survey-form">
+      
+      <div id="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      
+      <div id="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Enter your Email"
+          required
+        />
+      </div>
+      
+      <div id="form-group">
+        <label id="number-label" for="number">Age</label>
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="10"
+          max="99"
+          class="form-control"
+          placeholder="Age"
+        />
+      </div>
+      
+      <div id="form-group">
+        <p>Which position do you want to apply for?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select position</option>
+          <option value="vol">Volunteer</option>
+          <option value="tm">Team member</option>
+          <option value="tl">Team lead</option>
+          <option value="ec">Executive committee</option>
+          <option value="sp">Sponsorship provider</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      
+      <div id="form-group">
+        <p>How would you rate your Coding skills?</p>
+        <label>
+          <input
+            name="coding-skills"
+            value="good"
+            type="radio"
+            class="input-radio"
+          />Good
+        </label>
+        <label>
+          <input
+            name="coding-skills"
+            value="satisfactory"
+            type="radio"
+            class="input-radio"
+          />Satisfactory
+        </label>
+        <label>
+          <input
+            name="coding-skills"
+            value="poor"
+            type="radio"
+            class="input-radio"
+            checked
+          />Poor
+        </label>
+      </div>
+      
+      <div id="form-group">
+        <p>How did you get to know about us?</p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="seniors">Seniors</option>
+          <option value="friends">Friends</option>
+          <option value="insta">Instagram</option>
+          <option value="fb">Facebook</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      
+      <div id="form-group">
+         <p>What team do you want to apply for?(Can be > 1)</p>
+        
+        <label>
+          <input
+            name="prefer"
+            value="coding"
+            type="checkbox"
+            class="input-checkbox"
+          />Coding
+        </label>
+        
+        <label>
+          <input
+            name="prefer"
+            value="modelling"
+            type="checkbox"
+            class="input-checkbox"
+          />Mechanical modelling
+        </label>
+        <label
+          ><input
+            name="prefer"
+            value="human-resource"
+            type="checkbox"
+            class="input-checkbox"
+          />Human resource
+        </label>
+        <label>
+          <input
+            name="prefer"
+            value="sponsorship"
+            type="checkbox"
+            class="input-checkbox"
+          />Sponsorship
+        </label>
+        <label>
+          <input
+            name="prefer"
+            value="event-management"
+            type="checkbox"
+            class="input-checkbox"
+          />Event management
+        </label>
+      </div>
+      
+      <div id="form-group">
+        <p>Any about yourself that you would like to share?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="i am a..."
+        >
+        </textarea>
+      </div>
+        
+      <div id="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+      
+    </form>
+  </div>

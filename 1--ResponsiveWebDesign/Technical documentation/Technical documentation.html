@@ -1,0 +1,148 @@
+<link rel="stylesheet" href="Technical documentation.css">
+
+<nav id="navbar">
+    <header>C++ OOP</header>
+    <ul>
+      <li>
+        <a class="nav-link" href="#C++_What_is_OOP?">C++ What is OOP?</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Classes/Objects">Classes/Objects</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Class_Methods">Class Methods</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Constructors">Constructors</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Access_Specifiers">Access Specifiers</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Inheritance">Inheritance</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Polymorphism">Polymorphism</a>
+      </li>
+    </ul>
+  </nav>
+  
+  <main id="main-doc">
+    
+    <section class="main-section" id="C++_What_is_OOP?">
+      <header>C++ What is OOP?</header>
+      <article>
+        <p>
+          OOP stands for Object-Oriented Programming.
+        </p>
+        <p>
+          Procedural programming is about writing procedures or functions that perform operations on the data, while object-oriented programming is about creating objects that contain both data and functions.
+        </p>
+        <p>
+          Object-oriented programming has several advantages over procedural programming:
+        </p>
+        <p>
+          <ul>
+            <li>OOP is faster and easier to execute</li>
+            <li>OOP provides a clear structure for the programs</li>
+            <li>OOP helps to keep the C++ code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug</li>
+            <li>OOP makes it possible to create full reusable applications with less code and shorter development time</li>
+          </ul>
+        </p>
+        <p><strong>Tip:</strong> The "Don't Repeat Yourself" (DRY) principle is about reducing the repetition of code. You should extract out the codes that are common for the application, and place them at a single place and reuse them instead of repeating it.</p>
+      </article>
+    </section>
+  
+    <section class="main-section" id="Classes/Objects">
+      <header>Classes/Objects</header>
+      <article>
+        <p>Everything in C++ is associated with classes and objects, along with its attributes and 
+  methods. For example: in real life, a car is an <strong>object</strong>. The car has <strong>attributes</strong>, such as weight and color, and <strong>
+  methods</strong>, such as drive and brake.</p>
+        <p>Attributes and methods are basically <strong>variables</strong> and <strong>
+  functions</strong> that belongs to the class. These are often referred to as 
+  "class members".</p>
+        <p>A class is a user-defined data type that we can use in our program, and it 
+  works as an object constructor, or a "blueprint" for creating objects.</p>
+      </article>    
+    </section>
+  
+    <section class="main-section" id="Class_Methods">
+      <header>Class Methods</header>
+      <article>
+        <p>Methods are <strong>functions</strong> that belongs to the class.</p><p>There are two ways to define functions that belongs to a class:</p><ul>
+  <li>Inside class definition</li>
+  <li>Outside class definition</li>
+  </ul><p>In the following example, we define a function inside the class, and we name 
+  it "<code class="w3-codespan">myMethod</code>".</p><p><strong>Note:</strong> You access methods just like you access attributes; by creating an object of 
+  the class and using the dot syntax (<code class="w3-codespan">.</code>):</p><p>To define a function outside the class definition, you have to declare it 
+  inside the class and then define it outside of the class. This is done by specifiying the 
+  name of the class, followed the scope resolution <code class="w3-codespan">::</code> operator, 
+  followed by the name of the function:</p>
+      </article>
+    </section>
+  
+    <section class="main-section" id="Constructors">
+      <header>Constructors</header>
+      <article>
+        <p>A constructor in C++ is a <strong>special method</strong> that is 
+  automatically called when an object of a class is created.</p><p>To create a constructor, use the same name as the class, followed by 
+  parentheses <code class="w3-codespan">()</code>:</p><h4>Constructor Parameters</h4><p>Constructors can also take parameters (just like regular functions), which can be 
+  useful for setting initial values for attributes.</p><p>Just like functions, constructors can also be defined outside the class. 
+  First, declare the constructor inside the class, and then define it outside of the 
+  class by specifying the name of the class, followed by the scope resolution <code class="w3-codespan">::</code> 
+  operator, followed by the name of the constructor (which is the same as the 
+  class):</p>
+      </article>
+    </section>
+  
+    <section class="main-section" id="Access_Specifiers">
+      <header>Access Specifiers</header>
+      <article>
+        <p>By now, you are quite familiar with the <code class="w3-codespan">public</code> keyword that appears in all of our class examples:</p><p>The <code class="w3-codespan">public</code> keyword is an <strong>access specifier.</strong> 
+  Access specifiers define how the members (attributes and methods) of a class can 
+  be accessed. In the example above, the members are <code class="w3-codespan">public</code> - which means that they 
+  can be accessed and modified from outside the code. </p><p>However, what if we want 
+  members to be private and hidden from the outside world? </p><p>In C++, there are three access specifiers:</p><ul>
+  <li><code class="w3-codespan">public</code> - members are accessible from outside the class</li>
+  <li><code class="w3-codespan">private</code> - members cannot be accessed (or 
+  viewed) from outside the class</li>
+  <li><code class="w3-codespan">protected</code> - members cannot be accessed from 
+  outside the class, however, they can be accessed in inherited classes. You will learn more about Inheritance later.</li>
+  </ul><p><strong>Note:</strong> It is possible to access private members of a class 
+  using a public method inside the same class. See the next chapter (Encapsulation) 
+  on how to do this.</p><p><strong>Tip:</strong> It is considered good practice to declare your class attributes as private (as 
+  often as you can). This will reduce the possibility of yourself (or others) to mess up the code. This is also the 
+    main ingredient of the Encapsulation
+    concept, which you will learn more about in the next chapter.</p>
+      </article>
+    </section>
+  
+    <section class="main-section" id="Inheritance">
+      <header>Inheritance</header>
+      <article>
+        <p>In C++, it is possible to inherit attributes and methods from one class to another. We group the "inheritance concept" into two categories:</p><ul>
+  <li><strong>derived class</strong> (child) - the class that inherits from another class</li>
+  <li><strong>base class</strong> (parent) - the class being inherited from</li>
+  </ul><p>To inherit from a class, use the <code class="w3-codespan">:</code> symbol.</p><h4>Why And When To Use "Inheritance"?</h4><p>- It is useful for code reusability: reuse attributes and methods of an existing class when you create a new class.</p><p>A class can also be derived from one class, which is already derived from 
+  another class.</p><p>A class can also be derived from more than one base class, using a <strong>comma-separated list:</strong></p><p>You learned from the <a href="#Access_Specifiers">Access Specifiers</a> chapter that there are three 
+  specifiers available in C++. Until now, we have only used <code class="w3-codespan">public</code> (members of a 
+  class are accessible from outside the class) and <code class="w3-codespan">private</code> (members can only be 
+  accessed within the class). The third specifier, <code class="w3-codespan">protected</code>, is similar to 
+  <code class="w3-codespan">private</code>, but it can also be accessed in the 
+  <strong>inherited</strong> class:</p>
+      </article>
+    </section>
+  
+    <section class="main-section" id="Polymorphism">
+      <header>Polymorphism</header>
+      <article>
+        <p>Polymorphism means "many forms", and it occurs when we have many classes that are related to each other by inheritance.</p><strong>Inheritance</strong></a> lets us 
+  inherit attributes and methods from another class. <strong>Polymorphism</strong> 
+  uses those methods to perform different tasks. This allows us to perform a single 
+  action in different ways.</p><p>Remember from the <a href="#Inheritance">Inheritance </a>  that we use the <code class="w3-codespan">:</code> symbol to inherit from a class.</p><h4>Why And When To Use "Inheritance" and "Polymorphism"?</h4>
+  <p>- It is useful for code reusability: reuse attributes and methods of an existing class when you create a new class.</p>
+      </article>
+    </section>
+  
+  </main>
